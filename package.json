@@ -1,0 +1,19 @@
+{
+  "name": "newproject",
+  "version": "1.0.0",
+  "description": "Empty ES2015 Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "node node_modules/nyc/bin/nyc.js --reporter=lcov --exclude=spec node_modules/jasmine/bin/jasmine.js"
+  },
+  "repository": "git@github.com:tomdionysus/newproject.git",
+  "author": "Tom Cully",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^3.7.0",
+    "nyc": "^15.1.0"
+  },
+  "dependencies": {
+    "underscore": "^1.12.1"
+  }
+}
