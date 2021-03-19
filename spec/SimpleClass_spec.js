@@ -1,28 +1,25 @@
 const SimpleClass = require('../lib/SimpleClass')
 
-describe('SimpleClass',()=>{
-	it('should instatiate',()=>{
-		var v = new SimpleClass()
+describe('SimpleClass', () => {
+  it('should instatiate', () => {
+    var v = new SimpleClass()
 
-		expect(v instanceof SimpleClass).toBeTruthy()
-	})
+    expect(v instanceof SimpleClass).toBeTruthy()
+  })
 
-	describe('hello',()=>{
+  describe('hello', () => {
+    var v
 
-		var v
+    beforeEach(() => {
+      v = new SimpleClass()
+    })
 
-		beforeEach(()=>{
-			v = new SimpleClass()
-		})
+    it('should instatiate', () => {
+      spyOn(console, 'log')
 
-		it('should instatiate',()=>{
+      v.hello()
 
-			spyOn(console,'log')
-
-			v.hello()
-
-			expect(console.log).toHaveBeenCalledWith('Hello World')
-		})
-
-	})
+      expect(console.log).toHaveBeenCalledWith('Hello World')
+    })
+  })
 })
