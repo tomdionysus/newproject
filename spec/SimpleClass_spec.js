@@ -1,14 +1,16 @@
+/* eslint-env jasmine */
+
 const SimpleClass = require('../lib/SimpleClass')
 
 describe('SimpleClass', () => {
   it('should instatiate', () => {
-    var v = new SimpleClass()
+    const v = new SimpleClass()
 
     expect(v instanceof SimpleClass).toBeTruthy()
   })
 
   describe('hello', () => {
-    var v
+    let v
 
     beforeEach(() => {
       v = new SimpleClass()

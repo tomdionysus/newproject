@@ -18,6 +18,7 @@
     "nyc": "^15.1.0"
   },
   "dependencies": {
+    "eslint-plugin-jasmine": "^4.1.2",
     "underscore": "^1.12.1"
   }
 }
